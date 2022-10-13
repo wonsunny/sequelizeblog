@@ -7,6 +7,11 @@ const commentSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
+  userId: { //
+    type: String,
+    required: true,
+    trim: true
+  },
   password: {
     type: String,
     required: true,
@@ -21,12 +26,24 @@ const commentSchema = new mongoose.Schema({
     requird:true,
     trim: true
   },
+  comment: {
+    type: String,
+    requird:true,
+    trim: true
+  },
   createdAt: {
     type: Date,
     default: Date.now,
     requird: true,
     unique: true
+  },
+  updatedAt: {
+    type: Date,
+    default: Date.now,
+    requird: true,
+    unique: true
   }
+
 
 
 });

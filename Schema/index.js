@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connect = () => {
   mongoose
-    .connect("mongodb+srv://test:sparta@cluster0.jmqfz5u.mongodb.net/Cluster0?retryWrites=true&w=majority")
+    .connect("mongodb://localhost/blog_login")
     .catch(err => console.log(err));
 };
 
